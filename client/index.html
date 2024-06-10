@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do App</title>
+  <link href="./style.css" rel="stylesheet" />
+  <script src="./login.js"></script>
+  <script src="./app.js"></script>
+  <script src="./removeTask.js"></script>
+  <script src="./signUp.js"></script>
+</head>
+
+<body>
+  <div class="login-or-SignUp">
+    <p>
+    <button id="login-btn" onclick="tologinBtnClicked()">Login</button>
+  </p><p>
+    <button id="To-Sign-Up" onclick="toSignUpBtnCliked()">Sign Up</button>
+  </p>
+  </div><div class="Sign-up-Page">
+  <p>
+  <input id="Sign-Up-Last-name" type="text" placeholder="Last name" required/>
+  <input id="Sign-Up-First-name" type="text" placeholder="First name" required/>
+</p><p>
+  <input id="Sign-Up-Email" type="email" placeholder="Email" required/>
+</p><p>
+  <input id="Sign-Up-password" type="password" type="number" placeholder="Password" required/>
+  <input id="Sign-Up-Re-enter-password" type="password" type="number" placeholder="Re enter password" required/>
+</p>
+<p style="font-size: x-small;">Password can be numbers only <span id="Password-check" style="color:red;"></span></p>
+<button type="submit" onclick="SignUpBtnCliked()">Submit</button>
+</div>
+<div div class="Login-Page">
+  <p>Enter your email address.</p>
+    <input id="Login-Email" type="email" placeholder="Email" required>
+    <button type="submit" onclick="LoginUpBtnCliked()">Submit</button>
+</div>
+<!-- ----------------------------- -->
+
+<!-- <input id="user-name-input" type="text" style="display: none" placeholder="Please Enter Your user name" /> -->
+
+
+<!-- ----------------------------- -->
+
+  <div class="todo-container" style="display: none">
+    <h1 id="app-title"></h1>
+    <div class="input-container">
+      <input type="text" id="new-task" placeholder="Add a new task" />
+      <button class="add-task" onclick="addTaskBtnClicked()">+</button>
+    </div>
+    <section class="task-list" id="todo-list">
+    </section>
+    <section class="task-list completed" id="done-list">
+
+    </section>
+  </div>
+</body>
+
+</html>
